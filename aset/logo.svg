@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="210" height="44" viewBox="0 0 210 44" role="img" aria-label="AVESONIC">
+  <g fill="#6CB4C8"><rect x="2" y="17" width="3" height="10" rx="1.5"/><rect x="8" y="10" width="3" height="24" rx="1.5"/><rect x="14" y="14" width="3" height="16" rx="1.5"/><rect x="20" y="8" width="3" height="28" rx="1.5"/></g>
+  <path d="M27 31 C 28 17, 39 8, 54 7 C 53 21, 44 31, 27 31 Z" fill="#D6A84B"/>
+  <path d="M28 30 C 36 22, 45 14, 53 8" fill="none" stroke="#12372A" stroke-opacity="0.5" stroke-width="1.4"/>
+  <text x="64" y="29" font-family="Fraunces, Georgia, 'Times New Roman', serif" font-size="20" font-weight="700" letter-spacing="2.4" fill="#F7F4EA">AVESONIC</text>
+</svg>
