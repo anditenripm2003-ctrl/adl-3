@@ -5,9 +5,9 @@ Dashboard Streamlit untuk tugas Data Mining. Lima halaman:
 | Halaman | Isi |
 |---|---|
 | Beranda | Ringkasan dan tiga temuan utama dalam bahasa sehari-hari |
-| Kenali Datanya | Sepuluh spesies (audio + spektrogram), komposisi data, peta lokasi, pembagian data, kualitas klip |
+| Kenali Datanya | Sepuluh spesies (audio + spektrogram), tiga temuan pemeriksaan data, lalu tab: jumlah per spesies, lokasi (peta dan spesies per wilayah), pembagian data, tabel |
 | Coba Tebak | Tebak spesies dari klip contoh, unggahan, atau rekaman mikrofon; wilayah perekaman bisa diisi (opsional) |
-| Hasil Analisis | Perbandingan tujuh metode, sebelum–sesudah perbaikan, uji selisih, ketahanan terhadap perekam baru, hasil per spesies, peragaan DTW |
+| Hasil Analisis | Empat tab: papan peringkat (sebelum–sesudah dalam satu tampilan), per spesies, seberapa bisa dipercaya, peragaan DTW |
 | Catatan & Sumber | Batasan, kamus istilah, daftar perekam, lisensi, ringkasan metode |
 
 ## Yang baru di versi 2
@@ -39,9 +39,10 @@ Lalu buka http://localhost:8501.
 
 Pemasangan di Streamlit Community Cloud belum diuji.
 
-## Status pengujian versi 2
+## Status pengujian
 
-Perubahan versi 2 (model baru, halaman Coba Tebak, Hasil Analisis, Beranda, Catatan) **belum dijalankan dengan Streamlit sungguhan**: lingkungan tempat perubahan ini dibuat tidak memiliki Streamlit, Plotly, maupun model BirdNET. Yang sudah diperiksa: semua berkas lolos kompilasi, kelima halaman dijalankan dari awal sampai akhir dengan Streamlit dan Plotly tiruan (untuk menangkap salah nama, kunci JSON yang hilang, dan sejenisnya), dan keluaran model `.npz` dicocokkan dengan model di notebook. Jalankan `streamlit run app.py` sekali dan buka kelima halaman sebelum dipakai.
+- Versi 2 (model baru) sudah dijalankan pemiliknya dengan Streamlit.
+- **Perombakan tampilan (versi 2.1) belum dijalankan dengan Streamlit sungguhan.** Lingkungan tempat perombakan dibuat tidak memiliki Streamlit maupun Plotly. Yang diperiksa: semua berkas lolos kompilasi; kelima halaman dan keempat tab dijalankan dengan Streamlit dan Plotly tiruan; komponen HTML/CSS buatan sendiri (kartu temuan, papan peringkat, pita, daftar batasan) dipotret dengan Chrome. Grafik Plotly, tab, dan widget asli Streamlit tidak terlihat di pemeriksaan itu. Buka kelima halaman dan tiap tab sekali sebelum dipakai.
 
 ## Catatan penting
 
